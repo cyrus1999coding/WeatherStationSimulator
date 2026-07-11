@@ -1,4 +1,7 @@
-﻿namespace WeatherStationSimulator
+﻿# WeatherSimulator - Getting the Most common weather condition
+
+```cs
+namespace WeatherStationSimulator
 {
     internal class Program
     {
@@ -27,7 +30,7 @@
             Console.WriteLine($"The Max temprature was: {temprature.Max()}");
             Console.WriteLine($"The Min temprature: {temprature.Min()}");
             Console.WriteLine($"The Min temprature: {MinTemprature(temprature)}");
-            Console.WriteLine($"Most Common condition was: {MostCommonConditions(weatherConditions)}");
+            Console.WriteLine($"Most Common condition was: {MostCommonConditions(weatherConditions)}"); 👈
 
             Console.ReadKey();
         }
@@ -78,7 +81,7 @@
 
         }
 
-        static string MostCommonConditions(string[] condtions)
+        static string MostCommonConditions(string[] condtions) 👈
         {
             int count = 0;
             string mostCommon = condtions[0];
@@ -104,3 +107,15 @@
         }
     }
 }
+
+```
+
+```console
+Enter the number of days to simulate:
+5
+AVARAGE TEMPRATURE IS: 13.8
+The Max temprature was: 35
+The Min temprature: -5
+The Min temprature: -5
+Most Common condition was: Cloudy
+```
